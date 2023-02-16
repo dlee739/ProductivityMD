@@ -1,0 +1,61 @@
+
+\begin{DoxyItemize}
+\item Sqlite3
+\item qt 5.\+15 LTS
+\item c++ 11
+\end{DoxyItemize}
+
+There are two ways to build up the project\+: qmake and qcreator. We recommand building the project by using qmake; however, if this way does not work on your system, please try the way using qt creator.\hypertarget{md__read_me_autotoc_md1}{}\doxysection{Build Project Using qmake}\label{md__read_me_autotoc_md1}
+
+\begin{DoxyItemize}
+\item If your operating system is Mac OS, make sure you have every requirement setup
+\begin{DoxyEnumerate}
+\item Step 1\+: install every requirement
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item for qt installation\+: {\ttfamily brew install qt}
+\item for sqlite3 installation\+: {\ttfamily brew install sqlite}
+\item also, make sure you install $<$mark$>$ xcode $<$/mark$>$
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Step 2\+: cd to the directory that contains the file \char`\"{}productivity\+\_\+\+MS.\+pro\char`\"{}
+\item Step 3\+: run command {\ttfamily qmake -\/spec macx-\/clang productivity\+\_\+\+MS.\+pro}
+\item Step 4\+: run {\ttfamily make} to build project and it will generate an execuatable in the current directory
+\end{DoxyEnumerate}
+\item If your operating system is linux (some documents can be found onhttps\+://doc.qt.\+io/qt-\/5/qmake-\/running.html)
+\begin{DoxyEnumerate}
+\item Step1\+: install every requirement\+:
+\begin{DoxyItemize}
+\item for sqlite3 installation\+:
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item {\ttfamily sudo apt-\/get install sqlite3}
+\item {\ttfamily sudo apt install libsqlite3-\/dev}
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item for qt5-\/make\+: {\ttfamily sudo apt-\/get install -\/y qt5-\/qmake}
+\end{DoxyItemize}
+\item Step2\+: cd to the directory that contains the file \char`\"{}productivity\+\_\+\+MS.\+pro\char`\"{}
+\item Step3\+: run command {\ttfamily qmake productivity\+\_\+\+MS.\+pro}
+\item Step 4\+: run {\ttfamily make} to build project and it will generate an execuatable in the current directory, to run it\+: do ./productivity\+\_\+\+MS
+\end{DoxyEnumerate}
+\end{DoxyItemize}\hypertarget{md__read_me_autotoc_md2}{}\doxysection{Build Project Using Qt Creator}\label{md__read_me_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item Download the community version of QT online installer (\href{https://www.qt.io/download-open-source?hsCtaTracking=e9c17691-91a0-4616-9bc2-1a6a6c318914\%7C963686f8-2c68-442a-b17b-3d73ce95b819}{\texttt{ https\+://www.\+qt.\+io/download-\/open-\/source?hs\+Cta\+Tracking=e9c17691-\/91a0-\/4616-\/9bc2-\/1a6a6c318914\%7\+C963686f8-\/2c68-\/442a-\/b17b-\/3d73ce95b819}}) if you are using linux, you can also check this resource for qt creator installation\+: \href{https://web.stanford.edu/dept/cs_edu/resources/qt/install-linux}{\texttt{ https\+://web.\+stanford.\+edu/dept/cs\+\_\+edu/resources/qt/install-\/linux}}
+\item On Qt maintenance tool or QT online installer, first log in to Qt account
+\item Install Qt 5.\+15.\+2, under Qt 5.\+15.\+2 categtory ~\newline
+
+\begin{DoxyEnumerate}
+\item chooce mac\+OS/windows/linux
+\item chooce Sources
+\end{DoxyEnumerate}
+\item After successfully install Qt and Qt creator, open Qt Creator
+\item On Qt Creartor, Click \char`\"{}open project\char`\"{} button, choose file \char`\"{}productivity\+\_\+\+MS.\+pro\char`\"{}
+\item Configuration of the project, make sure the kit is \char`\"{}\+Desktop Qt 5.\+15.\+2 clang 64bit\char`\"{}
+
+
+\item Build and run project
+
+ 
+\end{DoxyEnumerate}

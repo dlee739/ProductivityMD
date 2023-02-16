@@ -1,0 +1,45 @@
+\hypertarget{calendar_8h_source}{}\doxysection{calendar.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef CALENDAR\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define CALENDAR\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <sqlite3.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <thread>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}Database.h"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}calendar\_task.h"{}}}
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classcalendar}{calendar}} \{}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     std::string currentUserId;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}{calendar}}(std::string userId);}
+\DoxyCodeLine{29     \mbox{\hyperlink{classcalendar_a4f4b26c7c11069764402a7d332f666f2}{\string~calendar}}();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_a492c430640a3818526ba92fab5c389e2}{addCalendarTask}}(std::string newTaskStartTime, std::string newTaskEndTime,}
+\DoxyCodeLine{31                          std::string newTaskTitle, std::string newTaskDesc, std::string newTaskUserId);}
+\DoxyCodeLine{32     std::vector<calendar\_task> \mbox{\hyperlink{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}{getTasksByIdAndStartingDate}}(std::string userId, std::string date);}
+\DoxyCodeLine{33     std::vector<calendar\_task> \mbox{\hyperlink{classcalendar_af81d7db6230a010de9b9a160f107769a}{searchTaskByTitleAndDesc}}(std::string userId, std::string title, std::string desc);}
+\DoxyCodeLine{34     std::vector<calendar\_task> \mbox{\hyperlink{classcalendar_a302e62493d48653006a3f54c553cc88e}{searchTaskByTitle}}(std::string userId, std::string title);}
+\DoxyCodeLine{35     std::vector<calendar\_task> \mbox{\hyperlink{classcalendar_a6055aaf139a6d62288d6194e6e7837af}{searchTaskByDesc}}(std::string userId, std::string desc);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{// boolean addMultipleCalendarTasks(vector<calendar\_task> list);}}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_a20bb820478ba087ebc49b8497fa8b343}{updateTaskStartTime}}(std::string taskId, std::string newStartTime);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}{updateTaskEndTime}}(std::string taskId, std::string newEndTime);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_a04d4532c55cff3953ee9d2a469107beb}{updateTaskTitle}}(std::string taskId, std::string newTaskTitle);}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}{updateTaskDesc}}(std::string taskId, std::string newTaskDesc);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}{deleteTaskById}}(std::string taskId); }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

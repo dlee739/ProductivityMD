@@ -1,0 +1,85 @@
+\hypertarget{class_database}{}\doxysection{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+The \mbox{\hyperlink{class_database}{Database}} class.  
+
+
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_a84d399a2ad58d69daab9b05330e1316d}\label{class_database_a84d399a2ad58d69daab9b05330e1316d}} 
+{\bfseries $\sim$\+Database} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{Database\+::$\sim$\+Database}} -\/ \mbox{\hyperlink{class_database}{Database}} destructor. \end{DoxyCompactList}\item 
+sqlite3 $\ast$ \mbox{\hyperlink{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}{get\+\_\+db}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}{Database\+::get\+\_\+db}} -\/ fetches the database\+\_\+handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{class_database}{Database}} \& \mbox{\hyperlink{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}{Database\+::get\+\_\+instance}} -\/ Returns the database instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_a4f27926028bc61da0ef1f64acca02d17}\label{class_database_a4f27926028bc61da0ef1f64acca02d17}} 
+static void {\bfseries delete\+DB} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_database_a4f27926028bc61da0ef1f64acca02d17}{Database\+::delete\+DB}} -\/ deletes an existing instance of a database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_a4703c80e6969d33565ea340f768fdadf}\label{class_database_a4703c80e6969d33565ea340f768fdadf}} 
+{\bfseries Database} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database\+::\+Database}} -\/ \mbox{\hyperlink{class_database}{Database}} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_a34554db755eccfe4503d895fd85c3750}\label{class_database_a34554db755eccfe4503d895fd85c3750}} 
+sqlite3 $\ast$ {\bfseries database\+\_\+handle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_aa29bfa4e0db9fabddc138143540211b6}\label{class_database_aa29bfa4e0db9fabddc138143540211b6}} 
+static const \mbox{\hyperlink{class_database}{Database}} $\ast$ {\bfseries \+\_\+instance} = NULL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_database}{Database}} class. 
+
+... text ... 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}\label{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}} 
+\index{Database@{Database}!get\_db@{get\_db}}
+\index{get\_db@{get\_db}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{get\_db()}{get\_db()}}
+{\footnotesize\ttfamily sqlite3 $\ast$ Database\+::get\+\_\+db (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}{Database\+::get\+\_\+db}} -\/ fetches the database\+\_\+handle. 
+
+\begin{DoxyReturn}{Returns}
+sqlite3$\ast$ -\/ database handle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}\label{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}} 
+\index{Database@{Database}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_database}{Database}} \& Database\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}{Database\+::get\+\_\+instance}} -\/ Returns the database instance. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{class_database}{Database}}\& -\/ instance 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Database.\+h\item 
+Database.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{classtodo__list}{}\doxysection{todo\+\_\+list Class Reference}
+\label{classtodo__list}\index{todo\_list@{todo\_list}}
+
+
+The \mbox{\hyperlink{classtodo__list}{todo\+\_\+list}} class Represents the list of to-\/do tasks This class holds a vector storing all the to-\/do tasks for the logged in user.  
+
+
+
+
+{\ttfamily \#include $<$todo\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtodo__list_a4eb64d00719bd132b4fc5c1f51198cb0}\label{classtodo__list_a4eb64d00719bd132b4fc5c1f51198cb0}} 
+{\bfseries todo\+\_\+list} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_a4eb64d00719bd132b4fc5c1f51198cb0}{todo\+\_\+list\+::todo\+\_\+list}} This is the constructor for the \mbox{\hyperlink{classtodo__list}{todo\+\_\+list}} class The constructor will read in all the to-\/do list tasks not completed for the logged in user and store into the list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtodo__list_ab71311214f171e822c0434593c26a701}{insert}} (string new\+\_\+task)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_ab71311214f171e822c0434593c26a701}{todo\+\_\+list\+::insert}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtodo__list_a0868782f75ebbfa60b724dc7ab011d7a}{remove\+\_\+task}} (string task)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_a0868782f75ebbfa60b724dc7ab011d7a}{todo\+\_\+list\+::remove\+\_\+task}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classtodo__list_a3ced08cb52a990d4f6ddff838895594a}{get\+\_\+title\+\_\+at}} (int index)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_a3ced08cb52a990d4f6ddff838895594a}{todo\+\_\+list\+::get\+\_\+title\+\_\+at}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classtodo__list_a3edf6573f25a907213cb55bccbba70bd}{search\+\_\+by\+\_\+task\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_a3edf6573f25a907213cb55bccbba70bd}{todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Id}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtodo__list_ae747c3d5710e8ce63b0490a9f98e4614}{search\+\_\+by\+\_\+task\+Title}} (string title)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_ae747c3d5710e8ce63b0490a9f98e4614}{todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Title}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtodo__list_ae35cadedded90931be82c76eca3e3146}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtodo__list_ae35cadedded90931be82c76eca3e3146}{todo\+\_\+list\+::get\+Size}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtodo__list_ad4a028e1445451bd406a227eb24105e8}\label{classtodo__list_ad4a028e1445451bd406a227eb24105e8}} 
+int {\bfseries size}
+\item 
+\mbox{\Hypertarget{classtodo__list_ae2c60be4aa9727206adeef5f912aa996}\label{classtodo__list_ae2c60be4aa9727206adeef5f912aa996}} 
+vector$<$ \mbox{\hyperlink{classtodo__list__task}{todo\+\_\+list\+\_\+task}} $>$ {\bfseries todo\+\_\+tasks}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classtodo__list}{todo\+\_\+list}} class Represents the list of to-\/do tasks This class holds a vector storing all the to-\/do tasks for the logged in user. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtodo__list_a3ced08cb52a990d4f6ddff838895594a}\label{classtodo__list_a3ced08cb52a990d4f6ddff838895594a}} 
+\index{todo\_list@{todo\_list}!get\_title\_at@{get\_title\_at}}
+\index{get\_title\_at@{get\_title\_at}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{get\_title\_at()}{get\_title\_at()}}
+{\footnotesize\ttfamily string todo\+\_\+list\+::get\+\_\+title\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_a3ced08cb52a990d4f6ddff838895594a}{todo\+\_\+list\+::get\+\_\+title\+\_\+at}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the title in string of indexed task in string This method returns the title of a task positioned in given index of the todo list vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtodo__list_ae35cadedded90931be82c76eca3e3146}\label{classtodo__list_ae35cadedded90931be82c76eca3e3146}} 
+\index{todo\_list@{todo\_list}!getSize@{getSize}}
+\index{getSize@{getSize}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int todo\+\_\+list\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_ae35cadedded90931be82c76eca3e3146}{todo\+\_\+list\+::get\+Size}} 
+
+\begin{DoxyReturn}{Returns}
+the size in int This method returns the size of todo list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtodo__list_ab71311214f171e822c0434593c26a701}\label{classtodo__list_ab71311214f171e822c0434593c26a701}} 
+\index{todo\_list@{todo\_list}!insert@{insert}}
+\index{insert@{insert}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void todo\+\_\+list\+::insert (\begin{DoxyParamCaption}\item[{string}]{new\+\_\+task }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_ab71311214f171e822c0434593c26a701}{todo\+\_\+list\+::insert}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+task} & Insert a newly created task into the sqlite database and into the list of tasks \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtodo__list_a0868782f75ebbfa60b724dc7ab011d7a}\label{classtodo__list_a0868782f75ebbfa60b724dc7ab011d7a}} 
+\index{todo\_list@{todo\_list}!remove\_task@{remove\_task}}
+\index{remove\_task@{remove\_task}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{remove\_task()}{remove\_task()}}
+{\footnotesize\ttfamily void todo\+\_\+list\+::remove\+\_\+task (\begin{DoxyParamCaption}\item[{string}]{task }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_a0868782f75ebbfa60b724dc7ab011d7a}{todo\+\_\+list\+::remove\+\_\+task}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & This method removes a given task from current todo list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtodo__list_a3edf6573f25a907213cb55bccbba70bd}\label{classtodo__list_a3edf6573f25a907213cb55bccbba70bd}} 
+\index{todo\_list@{todo\_list}!search\_by\_taskId@{search\_by\_taskId}}
+\index{search\_by\_taskId@{search\_by\_taskId}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{search\_by\_taskId()}{search\_by\_taskId()}}
+{\footnotesize\ttfamily string todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_a3edf6573f25a907213cb55bccbba70bd}{todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Id}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the title in string of the specified task This method searches for a specific task given its id, and returns its title 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtodo__list_ae747c3d5710e8ce63b0490a9f98e4614}\label{classtodo__list_ae747c3d5710e8ce63b0490a9f98e4614}} 
+\index{todo\_list@{todo\_list}!search\_by\_taskTitle@{search\_by\_taskTitle}}
+\index{search\_by\_taskTitle@{search\_by\_taskTitle}!todo\_list@{todo\_list}}
+\doxysubsubsection{\texorpdfstring{search\_by\_taskTitle()}{search\_by\_taskTitle()}}
+{\footnotesize\ttfamily int todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Title (\begin{DoxyParamCaption}\item[{string}]{title }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classtodo__list_ae747c3d5710e8ce63b0490a9f98e4614}{todo\+\_\+list\+::search\+\_\+by\+\_\+task\+Title}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the task id in int corresponding to the given title This method searches for a specific task given its title, and returns its id 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+todo\+\_\+list.\+h\item 
+todo\+\_\+list.\+cpp\end{DoxyCompactItemize}

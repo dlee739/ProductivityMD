@@ -1,0 +1,256 @@
+\hypertarget{classcalendar}{}\doxysection{calendar Class Reference}
+\label{classcalendar}\index{calendar@{calendar}}
+
+
+The calendar class.  
+
+
+
+
+{\ttfamily \#include $<$calendar.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}{calendar}} (std\+::string user\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}{calendar\+::calendar}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcalendar_a4f4b26c7c11069764402a7d332f666f2}\label{classcalendar_a4f4b26c7c11069764402a7d332f666f2}} 
+{\bfseries $\sim$calendar} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}{calendar\+::calendar}} destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_a492c430640a3818526ba92fab5c389e2}{add\+Calendar\+Task}} (std\+::string new\+Task\+Start\+Time, std\+::string new\+Task\+End\+Time, std\+::string new\+Task\+Title, std\+::string new\+Task\+Desc, std\+::string new\+Task\+User\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a492c430640a3818526ba92fab5c389e2}{calendar\+::add\+Calendar\+Task}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ \mbox{\hyperlink{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}{get\+Tasks\+By\+Id\+And\+Starting\+Date}} (std\+::string user\+Id, std\+::string date)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}{calendar\+::get\+Tasks\+By\+Id\+And\+Starting\+Date}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ \mbox{\hyperlink{classcalendar_af81d7db6230a010de9b9a160f107769a}{search\+Task\+By\+Title\+And\+Desc}} (std\+::string user\+Id, std\+::string title, std\+::string desc)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_af81d7db6230a010de9b9a160f107769a}{calendar\+::search\+Task\+By\+Title\+And\+Desc}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ \mbox{\hyperlink{classcalendar_a302e62493d48653006a3f54c553cc88e}{search\+Task\+By\+Title}} (std\+::string user\+Id, std\+::string title)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a302e62493d48653006a3f54c553cc88e}{calendar\+::search\+Task\+By\+Title}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ \mbox{\hyperlink{classcalendar_a6055aaf139a6d62288d6194e6e7837af}{search\+Task\+By\+Desc}} (std\+::string user\+Id, std\+::string desc)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a6055aaf139a6d62288d6194e6e7837af}{calendar\+::search\+Task\+By\+Desc}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_a20bb820478ba087ebc49b8497fa8b343}{update\+Task\+Start\+Time}} (std\+::string task\+Id, std\+::string new\+Start\+Time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a20bb820478ba087ebc49b8497fa8b343}{calendar\+::update\+Task\+Start\+Time}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}{update\+Task\+End\+Time}} (std\+::string task\+Id, std\+::string new\+End\+Time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}{calendar\+::update\+Task\+End\+Time}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_a04d4532c55cff3953ee9d2a469107beb}{update\+Task\+Title}} (std\+::string task\+Id, std\+::string new\+Task\+Title)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a04d4532c55cff3953ee9d2a469107beb}{calendar\+::update\+Task\+Title}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}{update\+Task\+Desc}} (std\+::string task\+Id, std\+::string new\+Task\+Desc)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}{calendar\+::update\+Task\+Desc}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}{delete\+Task\+By\+Id}} (std\+::string task\+Id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}{calendar\+::delete\+Task\+By\+Id}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcalendar_aa778ed031e9ded1594c9d01301f2b753}\label{classcalendar_aa778ed031e9ded1594c9d01301f2b753}} 
+std\+::string {\bfseries current\+User\+Id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The calendar class. 
+
+Author\+: Author\+: group 7 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}\label{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}} 
+\index{calendar@{calendar}!calendar@{calendar}}
+\index{calendar@{calendar}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{calendar()}{calendar()}}
+{\footnotesize\ttfamily calendar\+::calendar (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a2c32bc7394230da4f9ec00fccd5657f7}{calendar\+::calendar}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & constructor \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcalendar_a492c430640a3818526ba92fab5c389e2}\label{classcalendar_a492c430640a3818526ba92fab5c389e2}} 
+\index{calendar@{calendar}!addCalendarTask@{addCalendarTask}}
+\index{addCalendarTask@{addCalendarTask}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{addCalendarTask()}{addCalendarTask()}}
+{\footnotesize\ttfamily void calendar\+::add\+Calendar\+Task (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Task\+Start\+Time,  }\item[{std\+::string}]{new\+Task\+End\+Time,  }\item[{std\+::string}]{new\+Task\+Title,  }\item[{std\+::string}]{new\+Task\+Desc,  }\item[{std\+::string}]{new\+Task\+User\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a492c430640a3818526ba92fab5c389e2}{calendar\+::add\+Calendar\+Task}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Task\+Start\+Time} & \\
+\hline
+{\em new\+Task\+End\+Time} & \\
+\hline
+{\em new\+Task\+Title} & \\
+\hline
+{\em new\+Task\+Desc} & \\
+\hline
+{\em new\+Task\+User\+Id} & this method is to add calendar task that user inputs to the table \textquotesingle{}\mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}}\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}\label{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}} 
+\index{calendar@{calendar}!deleteTaskById@{deleteTaskById}}
+\index{deleteTaskById@{deleteTaskById}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{deleteTaskById()}{deleteTaskById()}}
+{\footnotesize\ttfamily void calendar\+::delete\+Task\+By\+Id (\begin{DoxyParamCaption}\item[{std\+::string}]{task\+Id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_ab6b9f166239905c147c7e3d50dfc7726}{calendar\+::delete\+Task\+By\+Id}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & this method is to delete a calendar task by its task\+Id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}\label{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}} 
+\index{calendar@{calendar}!getTasksByIdAndStartingDate@{getTasksByIdAndStartingDate}}
+\index{getTasksByIdAndStartingDate@{getTasksByIdAndStartingDate}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{getTasksByIdAndStartingDate()}{getTasksByIdAndStartingDate()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ calendar\+::get\+Tasks\+By\+Id\+And\+Starting\+Date (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id,  }\item[{std\+::string}]{date }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a8334924ba2530b667aaed8c3436c8d6a}{calendar\+::get\+Tasks\+By\+Id\+And\+Starting\+Date}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} obj that containing the data this method is get a list of tasks by user id and starting date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcalendar_a6055aaf139a6d62288d6194e6e7837af}\label{classcalendar_a6055aaf139a6d62288d6194e6e7837af}} 
+\index{calendar@{calendar}!searchTaskByDesc@{searchTaskByDesc}}
+\index{searchTaskByDesc@{searchTaskByDesc}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{searchTaskByDesc()}{searchTaskByDesc()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ calendar\+::search\+Task\+By\+Desc (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id,  }\item[{std\+::string}]{desc }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a6055aaf139a6d62288d6194e6e7837af}{calendar\+::search\+Task\+By\+Desc}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em desc} & this method is to search tasks by given desc \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_a302e62493d48653006a3f54c553cc88e}\label{classcalendar_a302e62493d48653006a3f54c553cc88e}} 
+\index{calendar@{calendar}!searchTaskByTitle@{searchTaskByTitle}}
+\index{searchTaskByTitle@{searchTaskByTitle}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{searchTaskByTitle()}{searchTaskByTitle()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ calendar\+::search\+Task\+By\+Title (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id,  }\item[{std\+::string}]{title }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a302e62493d48653006a3f54c553cc88e}{calendar\+::search\+Task\+By\+Title}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em title} & this method is to search tasks by given title \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_af81d7db6230a010de9b9a160f107769a}\label{classcalendar_af81d7db6230a010de9b9a160f107769a}} 
+\index{calendar@{calendar}!searchTaskByTitleAndDesc@{searchTaskByTitleAndDesc}}
+\index{searchTaskByTitleAndDesc@{searchTaskByTitleAndDesc}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{searchTaskByTitleAndDesc()}{searchTaskByTitleAndDesc()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classcalendar__task}{calendar\+\_\+task}} $>$ calendar\+::search\+Task\+By\+Title\+And\+Desc (\begin{DoxyParamCaption}\item[{std\+::string}]{user\+Id,  }\item[{std\+::string}]{title,  }\item[{std\+::string}]{desc }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_af81d7db6230a010de9b9a160f107769a}{calendar\+::search\+Task\+By\+Title\+And\+Desc}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em title} & \\
+\hline
+{\em desc} & this method is to search tasks by given desc and title \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}\label{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}} 
+\index{calendar@{calendar}!updateTaskDesc@{updateTaskDesc}}
+\index{updateTaskDesc@{updateTaskDesc}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{updateTaskDesc()}{updateTaskDesc()}}
+{\footnotesize\ttfamily void calendar\+::update\+Task\+Desc (\begin{DoxyParamCaption}\item[{std\+::string}]{task\+Id,  }\item[{std\+::string}]{new\+Task\+Desc }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a5f98038de13eb7ffc8ca21b2f4dfe2b8}{calendar\+::update\+Task\+Desc}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & \\
+\hline
+{\em new\+Task\+Desc} & this method is to update task descritption \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}\label{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}} 
+\index{calendar@{calendar}!updateTaskEndTime@{updateTaskEndTime}}
+\index{updateTaskEndTime@{updateTaskEndTime}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{updateTaskEndTime()}{updateTaskEndTime()}}
+{\footnotesize\ttfamily void calendar\+::update\+Task\+End\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{task\+Id,  }\item[{std\+::string}]{new\+End\+Time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_ae97b622f5bfe3f86d2f24d1e6787333b}{calendar\+::update\+Task\+End\+Time}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & \\
+\hline
+{\em new\+End\+Time} & this method is to update the input task end time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_a20bb820478ba087ebc49b8497fa8b343}\label{classcalendar_a20bb820478ba087ebc49b8497fa8b343}} 
+\index{calendar@{calendar}!updateTaskStartTime@{updateTaskStartTime}}
+\index{updateTaskStartTime@{updateTaskStartTime}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{updateTaskStartTime()}{updateTaskStartTime()}}
+{\footnotesize\ttfamily void calendar\+::update\+Task\+Start\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{task\+Id,  }\item[{std\+::string}]{new\+Start\+Time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a20bb820478ba087ebc49b8497fa8b343}{calendar\+::update\+Task\+Start\+Time}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & \\
+\hline
+{\em new\+Start\+Time} & this method is to update the input task starting time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcalendar_a04d4532c55cff3953ee9d2a469107beb}\label{classcalendar_a04d4532c55cff3953ee9d2a469107beb}} 
+\index{calendar@{calendar}!updateTaskTitle@{updateTaskTitle}}
+\index{updateTaskTitle@{updateTaskTitle}!calendar@{calendar}}
+\doxysubsubsection{\texorpdfstring{updateTaskTitle()}{updateTaskTitle()}}
+{\footnotesize\ttfamily void calendar\+::update\+Task\+Title (\begin{DoxyParamCaption}\item[{std\+::string}]{task\+Id,  }\item[{std\+::string}]{new\+Task\+Title }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcalendar_a04d4532c55cff3953ee9d2a469107beb}{calendar\+::update\+Task\+Title}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & \\
+\hline
+{\em new\+Task\+Title} & this method is to update task title \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+calendar.\+h\item 
+calendar.\+cpp\end{DoxyCompactItemize}

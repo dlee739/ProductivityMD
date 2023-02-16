@@ -1,0 +1,92 @@
+\hypertarget{class_authenticate}{}\doxysection{Authenticate Class Reference}
+\label{class_authenticate}\index{Authenticate@{Authenticate}}
+
+
+The \mbox{\hyperlink{class_authenticate}{Authenticate}} class.  
+
+
+
+
+{\ttfamily \#include $<$Authenticate.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_authenticate_ae1390accd84cd4fa091377da17434519}{Authenticate}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_authenticate_ae1390accd84cd4fa091377da17434519}{Authenticate\+::\+Authenticate}} -\/ \mbox{\hyperlink{class_authenticate}{Authenticate}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_authenticate_aeec33f981e7db75391746b12e9f3e8c4}\label{class_authenticate_aeec33f981e7db75391746b12e9f3e8c4}} 
+{\bfseries $\sim$\+Authenticate} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_authenticate_aeec33f981e7db75391746b12e9f3e8c4}{Authenticate\+::$\sim$\+Authenticate}} -\/ \mbox{\hyperlink{class_authenticate}{Authenticate}} destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_authenticate_a307822f2e575850a5ffa48530cfc973b}{login\+\_\+user}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_authenticate_a307822f2e575850a5ffa48530cfc973b}{Authenticate\+::login\+\_\+user}} -\/ Login function for authenticate object, used for verifying login of users. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_authenticate_a3fee5fb02167dbcb60ec61dc8f64e6b0}{register\+\_\+user}} (string username, string password, string firstname, string lastname)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_authenticate_a3fee5fb02167dbcb60ec61dc8f64e6b0}{Authenticate\+::register\+\_\+user}} -\/ Register function for authenticate object used for registering new user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_authenticate}{Authenticate}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_authenticate_ae1390accd84cd4fa091377da17434519}\label{class_authenticate_ae1390accd84cd4fa091377da17434519}} 
+\index{Authenticate@{Authenticate}!Authenticate@{Authenticate}}
+\index{Authenticate@{Authenticate}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{Authenticate()}{Authenticate()}}
+{\footnotesize\ttfamily Authenticate\+::\+Authenticate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_authenticate_ae1390accd84cd4fa091377da17434519}{Authenticate\+::\+Authenticate}} -\/ \mbox{\hyperlink{class_authenticate}{Authenticate}} constructor. 
+
+description\+: \mbox{\hyperlink{class_authenticate}{Authenticate}} class deals with the registration and login of user into the system last modified\+: 11/7/2022 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_authenticate_a307822f2e575850a5ffa48530cfc973b}\label{class_authenticate_a307822f2e575850a5ffa48530cfc973b}} 
+\index{Authenticate@{Authenticate}!login\_user@{login\_user}}
+\index{login\_user@{login\_user}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{login\_user()}{login\_user()}}
+{\footnotesize\ttfamily bool Authenticate\+::login\+\_\+user (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_authenticate_a307822f2e575850a5ffa48530cfc973b}{Authenticate\+::login\+\_\+user}} -\/ Login function for authenticate object, used for verifying login of users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & -\/ username of user \\
+\hline
+{\em password} & -\/ password of user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true if login is successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_authenticate_a3fee5fb02167dbcb60ec61dc8f64e6b0}\label{class_authenticate_a3fee5fb02167dbcb60ec61dc8f64e6b0}} 
+\index{Authenticate@{Authenticate}!register\_user@{register\_user}}
+\index{register\_user@{register\_user}!Authenticate@{Authenticate}}
+\doxysubsubsection{\texorpdfstring{register\_user()}{register\_user()}}
+{\footnotesize\ttfamily int Authenticate\+::register\+\_\+user (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{firstname,  }\item[{string}]{lastname }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_authenticate_a3fee5fb02167dbcb60ec61dc8f64e6b0}{Authenticate\+::register\+\_\+user}} -\/ Register function for authenticate object used for registering new user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & -\/ username of user \\
+\hline
+{\em password} & -\/ password of user \\
+\hline
+{\em firstname} & -\/ firstname of user \\
+\hline
+{\em lastname} & -\/ lastname of user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0 if username already exists in database, 1 if registration is successful, -\/1 if insertion failed with sqlite3. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Authenticate.\+h\item 
+Authenticate.\+cpp\end{DoxyCompactItemize}

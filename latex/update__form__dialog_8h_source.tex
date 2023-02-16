@@ -1,0 +1,43 @@
+\hypertarget{update__form__dialog_8h_source}{}\doxysection{update\+\_\+form\+\_\+dialog.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef UPDATE\_FORM\_DIALOG\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define UPDATE\_FORM\_DIALOG\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <thread>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QDateTime>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}calendar.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}user.h"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{classupdate__form__dialog}{update\_form\_dialog}};}
+\DoxyCodeLine{18 \}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classupdate__form__dialog}{update\_form\_dialog}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     Q\_OBJECT}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{explicit} \mbox{\hyperlink{classupdate__form__dialog_a066b6671f839ee70bfb2cdb21d6272d3}{update\_form\_dialog}}(QWidget *parent = \textcolor{keyword}{nullptr}, QVector<QString>* c = \textcolor{keyword}{new} QVector<QString>());}
+\DoxyCodeLine{29     \mbox{\hyperlink{classupdate__form__dialog_afa0286f005fb684815a0c202cde81018}{\string~update\_form\_dialog}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classupdate__form__dialog_a7ea655c050e6293df95b356aa4203eaf}{on\_buttonBox\_accepted}}();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{classupdate__form__dialog_a35e0f9f6391055ce9513a695bdb67997}{on\_buttonBox\_rejected}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36     Ui::update\_form\_dialog *ui;}
+\DoxyCodeLine{37     QVector<QString>* contents;}
+\DoxyCodeLine{38     QString taskId;}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UPDATE\_FORM\_DIALOG\_H}}
+
+\end{DoxyCode}

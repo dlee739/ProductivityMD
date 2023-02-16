@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['get_5fdb_0',['get_db',['../class_database.html#a0ac001ae4b3c1f5c4c9a6af292be3702',1,'Database']]],
+  ['get_5ffirstname_1',['get_firstname',['../classuser.html#ac363d5d04c83c9b568bfa98a5e317f48',1,'user']]],
+  ['get_5fid_2',['get_id',['../classuser.html#a50245dc6e2ac676436701423244a7c2f',1,'user']]],
+  ['get_5finstance_3',['get_instance',['../class_database.html#a2bf1e36cfb39ae49d217ba08e386ef40',1,'Database::get_instance()'],['../classuser.html#a0201f242859ed1a33287929b1fb7f0cb',1,'user::get_instance()']]],
+  ['get_5flastname_4',['get_lastname',['../classuser.html#a55558fad0ee3a2ca90b52abac7363ba6',1,'user']]],
+  ['get_5ftitle_5fat_5',['get_title_at',['../classtodo__list.html#a3ced08cb52a990d4f6ddff838895594a',1,'todo_list']]],
+  ['get_5fusername_6',['get_username',['../classuser.html#acfd93a3ac457b250d1ddbf97ed844e7b',1,'user']]],
+  ['getqu_7',['getQu',['../class_main_window.html#a251c74460928bc1b354f1d7c46f087fa',1,'MainWindow']]],
+  ['getsize_8',['getSize',['../classtodo__list.html#ae35cadedded90931be82c76eca3e3146',1,'todo_list']]],
+  ['gettaskdesc_9',['getTaskDesc',['../classcalendar__task.html#af8dece09481878551712caf3900fc84c',1,'calendar_task']]],
+  ['gettaskendtime_10',['getTaskEndTime',['../classcalendar__task.html#a5692821ee656b84bd85a066bebf67695',1,'calendar_task']]],
+  ['gettaskid_11',['getTaskId',['../classcalendar__task.html#a47d253c64bd5ae89b66e1d328ca849f8',1,'calendar_task::getTaskId()'],['../classtodo__list__task.html#a45bb72c54650a7929f8c6e8b2941fe3a',1,'todo_list_task::getTaskId()']]],
+  ['gettasksbyidandstartingdate_12',['getTasksByIdAndStartingDate',['../classcalendar.html#a8334924ba2530b667aaed8c3436c8d6a',1,'calendar']]],
+  ['gettaskstarttime_13',['getTaskStartTime',['../classcalendar__task.html#a58806e46a7a28a47db7e983320738a2d',1,'calendar_task']]],
+  ['gettasktitle_14',['getTaskTitle',['../classcalendar__task.html#a88e4d59d4d70ff7f05143dcaa307e7ea',1,'calendar_task']]],
+  ['gettitle_15',['getTitle',['../classtodo__list__task.html#acbe499a526c9f43e27035a2dff7a5f04',1,'todo_list_task']]]
+];

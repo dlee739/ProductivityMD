@@ -1,0 +1,90 @@
+\hypertarget{class_s_h_a512}{}\doxysection{SHA512 Class Reference}
+\label{class_s_h_a512}\index{SHA512@{SHA512}}
+
+
+The \mbox{\hyperlink{class_s_h_a512}{SHA512}} class.  
+
+
+
+
+{\ttfamily \#include $<$sha512.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a92d7e88a28d0bd70930df68bfcd4d136}\label{class_s_h_a512_a92d7e88a28d0bd70930df68bfcd4d136}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_s_h_a512_aa1c4c23e601cbc51deda2fecbfed71d6}\label{class_s_h_a512_aa1c4c23e601cbc51deda2fecbfed71d6}} 
+void {\bfseries update} (const unsigned char $\ast$message, unsigned int len)
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a6db56be0379bbf38babee9567356ad68}\label{class_s_h_a512_a6db56be0379bbf38babee9567356ad68}} 
+void {\bfseries final} (unsigned char $\ast$digest)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a911d66aedbff405df349ef300791d8eb}\label{class_s_h_a512_a911d66aedbff405df349ef300791d8eb}} 
+static const unsigned int {\bfseries DIGEST\+\_\+\+SIZE} = ( 512 / 8)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a92a2b23b4b5217fefcb5b1884f40c054}\label{class_s_h_a512_a92a2b23b4b5217fefcb5b1884f40c054}} 
+typedef unsigned char {\bfseries uint8}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a471dc56cc957eeebf5d3283b9c293da1}\label{class_s_h_a512_a471dc56cc957eeebf5d3283b9c293da1}} 
+typedef unsigned int {\bfseries uint32}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_af8e6d233ae15030174e481d6d79b1786}\label{class_s_h_a512_af8e6d233ae15030174e481d6d79b1786}} 
+typedef unsigned long long {\bfseries uint64}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_aaa6717d3ffe1b8efa2d17b838276ab29}\label{class_s_h_a512_aaa6717d3ffe1b8efa2d17b838276ab29}} 
+void {\bfseries transform} (const unsigned char $\ast$message, unsigned int block\+\_\+nb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a99134ffe06076eaf88e6db543304d0ef}\label{class_s_h_a512_a99134ffe06076eaf88e6db543304d0ef}} 
+unsigned int {\bfseries m\+\_\+tot\+\_\+len}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_ac08a6cd41b96a9ca98ca567c3225bdca}\label{class_s_h_a512_ac08a6cd41b96a9ca98ca567c3225bdca}} 
+unsigned int {\bfseries m\+\_\+len}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_aef099f8df4da2e3ea0a56bf5f0479fce}\label{class_s_h_a512_aef099f8df4da2e3ea0a56bf5f0479fce}} 
+unsigned char {\bfseries m\+\_\+block} \mbox{[}2 $\ast$SHA384\+\_\+512\+\_\+\+BLOCK\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a6fcfcd454382329628cd6baa0487bee5}\label{class_s_h_a512_a6fcfcd454382329628cd6baa0487bee5}} 
+uint64 {\bfseries m\+\_\+h} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint64 \mbox{\hyperlink{class_s_h_a512_af6d393ef5aa7458c3545efa1b9d92900}{sha512\+\_\+k}} \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{class_s_h_a512_a5191f35aa313f5fd0447d2c272a82c99}\label{class_s_h_a512_a5191f35aa313f5fd0447d2c272a82c99}} 
+static const unsigned int {\bfseries SHA384\+\_\+512\+\_\+\+BLOCK\+\_\+\+SIZE} = (1024/8)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_s_h_a512}{SHA512}} class. 
+
+... text ... 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_h_a512_af6d393ef5aa7458c3545efa1b9d92900}\label{class_s_h_a512_af6d393ef5aa7458c3545efa1b9d92900}} 
+\index{SHA512@{SHA512}!sha512\_k@{sha512\_k}}
+\index{sha512\_k@{sha512\_k}!SHA512@{SHA512}}
+\doxysubsubsection{\texorpdfstring{sha512\_k}{sha512\_k}}
+{\footnotesize\ttfamily const unsigned long long SHA512\+::sha512\+\_\+k\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+We are using the function sha512(std\+::string input) from this file to encrypt user passwords when they register and for validating passwords when users login. The password entered by the user is passed in as the input parameter when we call this function. This code was sourced from the following website\+: \href{http://www.zedwood.com/article/cpp-sha512-function}{\texttt{ http\+://www.\+zedwood.\+com/article/cpp-\/sha512-\/function}}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sha512.\+h\item 
+sha512.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\hypertarget{user_8h_source}{}\doxysection{user.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef USER\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define USER\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classuser}{user}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_authenticate}{Authenticate}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{static} \mbox{\hyperlink{classuser}{user}}* \_instance;  \textcolor{comment}{// a reference to the singleton user object}}
+\DoxyCodeLine{24     \textcolor{keywordtype}{string} username;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{string} firstname;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{string} lastname;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} user\_id;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \mbox{\hyperlink{classuser}{user}}();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}{set\_username}}(\textcolor{keywordtype}{string} username);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}{set\_firstname}}(\textcolor{keywordtype}{string} fname);}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classuser_a76c71fcf78f9073b1d03408bff25b30e}{set\_lastname}}(\textcolor{keywordtype}{string} lname);}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{classuser_adfc6a1a00c854beec1b889b56c274bd3}{set\_id}}(\textcolor{keywordtype}{int} userid);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{classuser}{\string~user}}();}
+\DoxyCodeLine{37     \textcolor{keyword}{static} \mbox{\hyperlink{classuser}{user}}\& \mbox{\hyperlink{classuser_a0201f242859ed1a33287929b1fb7f0cb}{get\_instance}}();}
+\DoxyCodeLine{38     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classuser_aa16e9ba552efcd5cdb78709e5b230d72}{delete\_user}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}{get\_username}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} \mbox{\hyperlink{classuser_ac363d5d04c83c9b568bfa98a5e317f48}{get\_firstname}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{string} \mbox{\hyperlink{classuser_a55558fad0ee3a2ca90b52abac7363ba6}{get\_lastname}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} \mbox{\hyperlink{classuser_a50245dc6e2ac676436701423244a7c2f}{get\_id}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

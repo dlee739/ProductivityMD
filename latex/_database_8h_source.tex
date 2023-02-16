@@ -1,0 +1,30 @@
+\hypertarget{_database_8h_source}{}\doxysection{Database.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef DATABASE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define DATABASE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QStandardPaths>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QApplication>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <sqlite3.h>}}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_database}{Database}} }
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     sqlite3* database\_handle;}
+\DoxyCodeLine{20     \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{class_database}{Database}}* \_instance;}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{\string~Database}}();}
+\DoxyCodeLine{25     \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{class_database}{Database}}\& \mbox{\hyperlink{class_database_a2bf1e36cfb39ae49d217ba08e386ef40}{get\_instance}}();  \textcolor{comment}{// const?}}
+\DoxyCodeLine{26     sqlite3* \mbox{\hyperlink{class_database_a0ac001ae4b3c1f5c4c9a6af292be3702}{get\_db}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_database_a4f27926028bc61da0ef1f64acca02d17}{deleteDB}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

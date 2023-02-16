@@ -1,0 +1,37 @@
+\hypertarget{todo__form_8h_source}{}\doxysection{todo\+\_\+form.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TODO\_FORM\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TODO\_FORM\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}todo\_list.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classtodo__form}{todo\_form}};}
+\DoxyCodeLine{9 \}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classtodo__form}{todo\_form}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     Q\_OBJECT}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{keyword}{explicit} \mbox{\hyperlink{classtodo__form_aba6ea3f8bdde111b332f794952f4c9fb}{todo\_form}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{20     \mbox{\hyperlink{classtodo__form_ae9f31f62b53716a02c7c2fb0d243704e}{\string~todo\_form}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtodo__form_add32916f5c00ace6d9a3dfb42ecce6ce}{setTodo}}(\mbox{\hyperlink{classtodo__list}{todo\_list}} *newTodo);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtodo__form_a1a79ed226cde5b52ed060e01961c6d26}{on\_confirmButton\_clicked}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{classtodo__form_af057c1ebdcc398ee770d37eda3f079be}{on\_cancelButton\_clicked}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     Ui::todo\_form *ui;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \mbox{\hyperlink{classtodo__list}{todo\_list}} *todo;}
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// TODO\_FORM\_H}}
+
+\end{DoxyCode}

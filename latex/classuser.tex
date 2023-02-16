@@ -1,0 +1,205 @@
+\hypertarget{classuser}{}\doxysection{user Class Reference}
+\label{classuser}\index{user@{user}}
+
+
+The user class The user clas represents the user that is logged in It is implemented as a singleton so that all parts of the application can access the user information of the logged in user The user object created will store the username, first name, last name and the user id as attributes.  
+
+
+
+
+{\ttfamily \#include $<$user.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}{get\+\_\+username}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}{user\+::get\+\_\+username}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_ac363d5d04c83c9b568bfa98a5e317f48}{get\+\_\+firstname}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_ac363d5d04c83c9b568bfa98a5e317f48}{user\+::get\+\_\+firstname}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classuser_a55558fad0ee3a2ca90b52abac7363ba6}{get\+\_\+lastname}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_a55558fad0ee3a2ca90b52abac7363ba6}{user\+::get\+\_\+lastname}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classuser_a50245dc6e2ac676436701423244a7c2f}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_a50245dc6e2ac676436701423244a7c2f}{user\+::get\+\_\+id}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classuser}{user}} \& \mbox{\hyperlink{classuser_a0201f242859ed1a33287929b1fb7f0cb}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em method\+: \mbox{\hyperlink{classuser_a0201f242859ed1a33287929b1fb7f0cb}{get\+\_\+instance()}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classuser_aa16e9ba552efcd5cdb78709e5b230d72}\label{classuser_aa16e9ba552efcd5cdb78709e5b230d72}} 
+static void {\bfseries delete\+\_\+user} ()
+\begin{DoxyCompactList}\small\item\em method\+: delete\+\_\+user This method is called when the application is terminating to delete the user instance and free up memory to prevent memory leaks \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}{set\+\_\+username}} (string username)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}{user\+::set\+\_\+username}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}{set\+\_\+firstname}} (string fname)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}{user\+::set\+\_\+firstname}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_a76c71fcf78f9073b1d03408bff25b30e}{set\+\_\+lastname}} (string lname)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_a76c71fcf78f9073b1d03408bff25b30e}{user\+::set\+\_\+lastname}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classuser_adfc6a1a00c854beec1b889b56c274bd3}{set\+\_\+id}} (int userid)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classuser_adfc6a1a00c854beec1b889b56c274bd3}{user\+::set\+\_\+id}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classuser_a59c0c9dbbc26f0e5ce2ef2b5838d0bd9}\label{classuser_a59c0c9dbbc26f0e5ce2ef2b5838d0bd9}} 
+string {\bfseries username}
+\item 
+\mbox{\Hypertarget{classuser_a4dcfa5c8599a0ff0ea15f2864ab190e8}\label{classuser_a4dcfa5c8599a0ff0ea15f2864ab190e8}} 
+string {\bfseries firstname}
+\item 
+\mbox{\Hypertarget{classuser_a4e47e17daa32f6680ab5e625dd025724}\label{classuser_a4e47e17daa32f6680ab5e625dd025724}} 
+string {\bfseries lastname}
+\item 
+\mbox{\Hypertarget{classuser_a20de217f273cb876103626515a67de28}\label{classuser_a20de217f273cb876103626515a67de28}} 
+int {\bfseries user\+\_\+id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classuser_a17283ff5b3a1bc92b351b3df3beae668}\label{classuser_a17283ff5b3a1bc92b351b3df3beae668}} 
+static \mbox{\hyperlink{classuser}{user}} $\ast$ {\bfseries \+\_\+instance} = NULL
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classuser_aa10f1ddc1773185dc5fc0a698d2ce49d}\label{classuser_aa10f1ddc1773185dc5fc0a698d2ce49d}} 
+class {\bfseries Authenticate}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The user class The user clas represents the user that is logged in It is implemented as a singleton so that all parts of the application can access the user information of the logged in user The user object created will store the username, first name, last name and the user id as attributes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classuser_ac363d5d04c83c9b568bfa98a5e317f48}\label{classuser_ac363d5d04c83c9b568bfa98a5e317f48}} 
+\index{user@{user}!get\_firstname@{get\_firstname}}
+\index{get\_firstname@{get\_firstname}!user@{user}}
+\doxysubsubsection{\texorpdfstring{get\_firstname()}{get\_firstname()}}
+{\footnotesize\ttfamily string user\+::get\+\_\+firstname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{classuser_ac363d5d04c83c9b568bfa98a5e317f48}{user\+::get\+\_\+firstname}} 
+
+\begin{DoxyReturn}{Returns}
+a string which is the first name of the logged in user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuser_a50245dc6e2ac676436701423244a7c2f}\label{classuser_a50245dc6e2ac676436701423244a7c2f}} 
+\index{user@{user}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!user@{user}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily int user\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{classuser_a50245dc6e2ac676436701423244a7c2f}{user\+::get\+\_\+id}} 
+
+\begin{DoxyReturn}{Returns}
+an int which is the user id of the logged in user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuser_a0201f242859ed1a33287929b1fb7f0cb}\label{classuser_a0201f242859ed1a33287929b1fb7f0cb}} 
+\index{user@{user}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!user@{user}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuser}{user}} \& user\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+method\+: \mbox{\hyperlink{classuser_a0201f242859ed1a33287929b1fb7f0cb}{get\+\_\+instance()}} 
+
+\begin{DoxyReturn}{Returns}
+the user object created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuser_a55558fad0ee3a2ca90b52abac7363ba6}\label{classuser_a55558fad0ee3a2ca90b52abac7363ba6}} 
+\index{user@{user}!get\_lastname@{get\_lastname}}
+\index{get\_lastname@{get\_lastname}!user@{user}}
+\doxysubsubsection{\texorpdfstring{get\_lastname()}{get\_lastname()}}
+{\footnotesize\ttfamily string user\+::get\+\_\+lastname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{classuser_a55558fad0ee3a2ca90b52abac7363ba6}{user\+::get\+\_\+lastname}} 
+
+\begin{DoxyReturn}{Returns}
+a string which is the last name of the logged in user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}\label{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}} 
+\index{user@{user}!get\_username@{get\_username}}
+\index{get\_username@{get\_username}!user@{user}}
+\doxysubsubsection{\texorpdfstring{get\_username()}{get\_username()}}
+{\footnotesize\ttfamily string user\+::get\+\_\+username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{classuser_acfd93a3ac457b250d1ddbf97ed844e7b}{user\+::get\+\_\+username}} 
+
+\begin{DoxyReturn}{Returns}
+a string which is the username of the logged in user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}\label{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}} 
+\index{user@{user}!set\_firstname@{set\_firstname}}
+\index{set\_firstname@{set\_firstname}!user@{user}}
+\doxysubsubsection{\texorpdfstring{set\_firstname()}{set\_firstname()}}
+{\footnotesize\ttfamily void user\+::set\+\_\+firstname (\begin{DoxyParamCaption}\item[{string}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classuser_aeb968ff2485f9b000ea0a785cf5ac2d0}{user\+::set\+\_\+firstname}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & -\/ the first name of the logged in user Method will set the firstname arttibute to be the first name of the logged in user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuser_adfc6a1a00c854beec1b889b56c274bd3}\label{classuser_adfc6a1a00c854beec1b889b56c274bd3}} 
+\index{user@{user}!set\_id@{set\_id}}
+\index{set\_id@{set\_id}!user@{user}}
+\doxysubsubsection{\texorpdfstring{set\_id()}{set\_id()}}
+{\footnotesize\ttfamily void user\+::set\+\_\+id (\begin{DoxyParamCaption}\item[{int}]{userid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classuser_adfc6a1a00c854beec1b889b56c274bd3}{user\+::set\+\_\+id}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em userid} & -\/ the user id of the logged in user Method will set the id arttibute to be the user id of the logged in user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuser_a76c71fcf78f9073b1d03408bff25b30e}\label{classuser_a76c71fcf78f9073b1d03408bff25b30e}} 
+\index{user@{user}!set\_lastname@{set\_lastname}}
+\index{set\_lastname@{set\_lastname}!user@{user}}
+\doxysubsubsection{\texorpdfstring{set\_lastname()}{set\_lastname()}}
+{\footnotesize\ttfamily void user\+::set\+\_\+lastname (\begin{DoxyParamCaption}\item[{string}]{lname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classuser_a76c71fcf78f9073b1d03408bff25b30e}{user\+::set\+\_\+lastname}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lname} & -\/ the last name of the logged in user Method will set the lastname arttibute to be the last name of the logged in user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}\label{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}} 
+\index{user@{user}!set\_username@{set\_username}}
+\index{set\_username@{set\_username}!user@{user}}
+\doxysubsubsection{\texorpdfstring{set\_username()}{set\_username()}}
+{\footnotesize\ttfamily void user\+::set\+\_\+username (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classuser_aebae157940a3ea68ac5a5ba5cde40bd8}{user\+::set\+\_\+username}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & -\/ the username of the logged in user Method will set the username arttibute to be the username of the logged in user \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+user.\+h\item 
+user.\+cpp\end{DoxyCompactItemize}

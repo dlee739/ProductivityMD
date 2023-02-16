@@ -1,0 +1,252 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+The \mbox{\hyperlink{class_main_window}{Main\+Window}} class.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window\+::\+Main\+Window}} this is a constructor for main dashboard UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+{\bfseries $\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{Main\+Window\+::$\sim$\+Main\+Window}} --- destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ad86cb3574354fb31db71ddbad7dc62c6}{on\+\_\+calendar\+Widget\+\_\+clicked}} (const QDate \&date)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_ad86cb3574354fb31db71ddbad7dc62c6}{Main\+Window\+::on\+\_\+calendar\+Widget\+\_\+clicked}} this function will return the specific date when user clicking the Calendar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3f9e451a1b5e858c3beed175b8860588}{Table\+Widget\+Display}} (const QDate \&date)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a3f9e451a1b5e858c3beed175b8860588}{Main\+Window\+::\+Table\+Widget\+Display}} this function will display calendar task by using table widget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a9b76259a2d71207cce66127f87a48419}\label{class_main_window_a9b76259a2d71207cce66127f87a48419}} 
+void {\bfseries on\+\_\+new\+Todo\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a9b76259a2d71207cce66127f87a48419}{Main\+Window\+::on\+\_\+new\+Todo\+Button\+\_\+clicked}} This method is an Event listener for create new todo task button. This method will display a todo form window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_aaa36c7d57ce81fc1a37044ba6e779de0}\label{class_main_window_aaa36c7d57ce81fc1a37044ba6e779de0}} 
+void {\bfseries on\+\_\+complete\+Todo\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_aaa36c7d57ce81fc1a37044ba6e779de0}{Main\+Window\+::on\+\_\+complete\+Todo\+Button\+\_\+clicked}} This method is an Event listener for complete todo task button which processes the task completions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a77a51cc1640988b655d8b312d61ef94a}{on\+\_\+todolist\+Widget\+\_\+item\+Changed}} (QList\+Widget\+Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a77a51cc1640988b655d8b312d61ef94a}{Main\+Window\+::on\+\_\+todolist\+Widget\+\_\+item\+Changed}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{close\+Event}} (QClose\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{Main\+Window\+::close\+Event}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a2b771ad50b698ea76cfb5d42f43bd221}\label{class_main_window_a2b771ad50b698ea76cfb5d42f43bd221}} 
+void {\bfseries on\+\_\+logout\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a2b771ad50b698ea76cfb5d42f43bd221}{Main\+Window\+::on\+\_\+logout\+Button\+\_\+clicked}} This method is an Event listener for logout button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a21b72f913d5dd98fee772195bf21395e}{on\+\_\+search\+\_\+button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a21b72f913d5dd98fee772195bf21395e}{Main\+Window\+::on\+\_\+search\+\_\+button\+\_\+clicked}} this function will search the keywords from title and desc edit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac70a65e0bdf1b517e947b0bd0161987e}{on\+\_\+delete\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_ac70a65e0bdf1b517e947b0bd0161987e}{Main\+Window\+::on\+\_\+delete\+Button\+\_\+clicked}} this function will delete the selected row from table widget and database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a359777657f443a037a150890a3881817}{on\+\_\+update\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a359777657f443a037a150890a3881817}{Main\+Window\+::on\+\_\+update\+Button\+\_\+clicked}} this function will update the selected row with by calling a pop up dialog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ab8750a8cc69910e6e627d53865e9cf7b}{on\+\_\+add\+Task\+Button\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em Main\+Window\+::on\+\_\+push\+Button\+\_\+clicked this function pop-\/up a Qdialog for adding task window when button cliecked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a30c061ed96366089e1670a181aa295a3}\label{class_main_window_a30c061ed96366089e1670a181aa295a3}} 
+void {\bfseries quote\+Gen} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a30c061ed96366089e1670a181aa295a3}{Main\+Window\+::quote\+Gen}} this function sends a request to a quote API to recieve a randomly gernerated quote. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a251c74460928bc1b354f1d7c46f087fa}{get\+Qu}} (QNetwork\+Reply $\ast$)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a251c74460928bc1b354f1d7c46f087fa}{Main\+Window\+::get\+Qu}} retrieves and parses the string from the network request and displays the quote on the api in a viewable display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a2658dbb00f2ae978c4230424d344af6d}\label{class_main_window_a2658dbb00f2ae978c4230424d344af6d}} 
+void {\bfseries on\+\_\+quote\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a2658dbb00f2ae978c4230424d344af6d}{Main\+Window\+::on\+\_\+quote\+Button\+\_\+clicked}} calls the quote\+Gen function when the quote button is clicked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a055ffd32252338daf80fce2353e3ca03}\label{class_main_window_a055ffd32252338daf80fce2353e3ca03}} 
+void {\bfseries update\+\_\+todo} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_main_window_a055ffd32252338daf80fce2353e3ca03}{Main\+Window\+::update\+\_\+todo}} This method updates the todo list widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+Ui\+::\+Main\+Window $\ast$ {\bfseries ui}
+\item 
+\mbox{\Hypertarget{class_main_window_a323a723f6b785810add576e85196a8c9}\label{class_main_window_a323a723f6b785810add576e85196a8c9}} 
+\mbox{\hyperlink{classtodo__list}{todo\+\_\+list}} {\bfseries todo}
+\item 
+\mbox{\Hypertarget{class_main_window_a1fd6d42eb6a8750123443b19bbcde58a}\label{class_main_window_a1fd6d42eb6a8750123443b19bbcde58a}} 
+QString {\bfseries my\+URL} = \char`\"{}https\+://api.\+api-\/ninjas.\+com/v1/quotes?category=inspirational\char`\"{}
+\item 
+\mbox{\Hypertarget{class_main_window_a163a9ca587f2babbd06e7c46416ee5a7}\label{class_main_window_a163a9ca587f2babbd06e7c46416ee5a7}} 
+QByte\+Array {\bfseries key} = \char`\"{}/2Bld\+Ev5h6k\+JPBzq2ie/dw==wk7sjrf\+Rg\+T1\+AYb91\char`\"{}
+\item 
+\mbox{\Hypertarget{class_main_window_aa29e52339928c2505f44576f59103346}\label{class_main_window_aa29e52339928c2505f44576f59103346}} 
+QByte\+Array {\bfseries header} = \char`\"{}X-\/Api-\/Key\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_main_window}{Main\+Window}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window\+::\+Main\+Window}} this is a constructor for main dashboard UI. 
+
+this class is for Main calendar dashboard UI Author\+: group 7
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}\label{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}} 
+\index{MainWindow@{MainWindow}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{closeEvent}{closeEvent}}
+{\footnotesize\ttfamily void Main\+Window\+::close\+Event (\begin{DoxyParamCaption}\item[{QClose\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a4e20a4a065fbb0e4d3532a45a0a91425}{Main\+Window\+::close\+Event}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & This method is an Event handler for exiting the program \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a251c74460928bc1b354f1d7c46f087fa}\label{class_main_window_a251c74460928bc1b354f1d7c46f087fa}} 
+\index{MainWindow@{MainWindow}!getQu@{getQu}}
+\index{getQu@{getQu}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getQu}{getQu}}
+{\footnotesize\ttfamily void Main\+Window\+::get\+Qu (\begin{DoxyParamCaption}\item[{QNetwork\+Reply $\ast$}]{reply }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a251c74460928bc1b354f1d7c46f087fa}{Main\+Window\+::get\+Qu}} retrieves and parses the string from the network request and displays the quote on the api in a viewable display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reply} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ab8750a8cc69910e6e627d53865e9cf7b}\label{class_main_window_ab8750a8cc69910e6e627d53865e9cf7b}} 
+\index{MainWindow@{MainWindow}!on\_addTaskButton\_clicked@{on\_addTaskButton\_clicked}}
+\index{on\_addTaskButton\_clicked@{on\_addTaskButton\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_addTaskButton\_clicked}{on\_addTaskButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+add\+Task\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Main\+Window\+::on\+\_\+push\+Button\+\_\+clicked this function pop-\/up a Qdialog for adding task window when button cliecked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ad86cb3574354fb31db71ddbad7dc62c6}\label{class_main_window_ad86cb3574354fb31db71ddbad7dc62c6}} 
+\index{MainWindow@{MainWindow}!on\_calendarWidget\_clicked@{on\_calendarWidget\_clicked}}
+\index{on\_calendarWidget\_clicked@{on\_calendarWidget\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_calendarWidget\_clicked}{on\_calendarWidget\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+calendar\+Widget\+\_\+clicked (\begin{DoxyParamCaption}\item[{const QDate \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_ad86cb3574354fb31db71ddbad7dc62c6}{Main\+Window\+::on\+\_\+calendar\+Widget\+\_\+clicked}} this function will return the specific date when user clicking the Calendar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ac70a65e0bdf1b517e947b0bd0161987e}\label{class_main_window_ac70a65e0bdf1b517e947b0bd0161987e}} 
+\index{MainWindow@{MainWindow}!on\_deleteButton\_clicked@{on\_deleteButton\_clicked}}
+\index{on\_deleteButton\_clicked@{on\_deleteButton\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_deleteButton\_clicked}{on\_deleteButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+delete\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_ac70a65e0bdf1b517e947b0bd0161987e}{Main\+Window\+::on\+\_\+delete\+Button\+\_\+clicked}} this function will delete the selected row from table widget and database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a21b72f913d5dd98fee772195bf21395e}\label{class_main_window_a21b72f913d5dd98fee772195bf21395e}} 
+\index{MainWindow@{MainWindow}!on\_search\_button\_clicked@{on\_search\_button\_clicked}}
+\index{on\_search\_button\_clicked@{on\_search\_button\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_search\_button\_clicked}{on\_search\_button\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+search\+\_\+button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a21b72f913d5dd98fee772195bf21395e}{Main\+Window\+::on\+\_\+search\+\_\+button\+\_\+clicked}} this function will search the keywords from title and desc edit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a77a51cc1640988b655d8b312d61ef94a}\label{class_main_window_a77a51cc1640988b655d8b312d61ef94a}} 
+\index{MainWindow@{MainWindow}!on\_todolistWidget\_itemChanged@{on\_todolistWidget\_itemChanged}}
+\index{on\_todolistWidget\_itemChanged@{on\_todolistWidget\_itemChanged}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_todolistWidget\_itemChanged}{on\_todolistWidget\_itemChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+todolist\+Widget\+\_\+item\+Changed (\begin{DoxyParamCaption}\item[{QList\+Widget\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a77a51cc1640988b655d8b312d61ef94a}{Main\+Window\+::on\+\_\+todolist\+Widget\+\_\+item\+Changed}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & This method is an Event listener for each checkboxes in each todo task items \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a359777657f443a037a150890a3881817}\label{class_main_window_a359777657f443a037a150890a3881817}} 
+\index{MainWindow@{MainWindow}!on\_updateButton\_clicked@{on\_updateButton\_clicked}}
+\index{on\_updateButton\_clicked@{on\_updateButton\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_updateButton\_clicked}{on\_updateButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+update\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a359777657f443a037a150890a3881817}{Main\+Window\+::on\+\_\+update\+Button\+\_\+clicked}} this function will update the selected row with by calling a pop up dialog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a3f9e451a1b5e858c3beed175b8860588}\label{class_main_window_a3f9e451a1b5e858c3beed175b8860588}} 
+\index{MainWindow@{MainWindow}!TableWidgetDisplay@{TableWidgetDisplay}}
+\index{TableWidgetDisplay@{TableWidgetDisplay}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{TableWidgetDisplay}{TableWidgetDisplay}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Table\+Widget\+Display (\begin{DoxyParamCaption}\item[{const QDate \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_main_window_a3f9e451a1b5e858c3beed175b8860588}{Main\+Window\+::\+Table\+Widget\+Display}} this function will display calendar task by using table widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\hypertarget{loginui_8h_source}{}\doxysection{loginui.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef LOGINUI\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define LOGINUI\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <regex>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Authenticate.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}mainwindow.h"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_login_u_i}{LoginUI}}; \}}
+\DoxyCodeLine{18 QT\_END\_NAMESPACE}
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_login_u_i}{LoginUI}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     Q\_OBJECT}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_login_u_i_ad5ab34dcd823905eae3d277f1ee32873}{LoginUI}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_login_u_i_a17069866ac4384dff88d20acff4be8eb}{\string~LoginUI}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_u_i_ad735a415108af6349fe67df65bc15e13}{on\_pushButton\_2\_clicked}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_u_i_a4ca74ebfac0686f2a98c5be215151173}{on\_pushButton\_clicked}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_login_u_i_aa95b46e75b4afde03525e10ab800c9f4}{closeEvent}}(QCloseEvent *event);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{private}:}
+\DoxyCodeLine{38     Ui::LoginUI *ui;}
+\DoxyCodeLine{39     QString username;}
+\DoxyCodeLine{40     QString password;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_login_u_i_aaf7a4b3f724564f85e6061a520bf3f4e}{validatePassword}}(std::string password);}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOGINUI\_H}}
+
+\end{DoxyCode}
